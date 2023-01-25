@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- source: https://developers.google.com/maps/documentation/javascript/overview#maps_map_simple-html -->
+<!-- STUDENTS: Modify this file to provided the Google API key to get it working, 
+               then modify the lat and lng and zoom to point to a place you know  -->
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="script.js"></script>
+    
+   <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        #map {
+          height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+      
+        }
+
+
+
+
+        /*  styling the website */
+
+        #MainHeading{ 
+          text-align: center;
+          background-color: lightblue;
+          color: black;
+          padding: 40px;
+        }
+
+        /* styling the id element */
+        #header {
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+        }
+
+        /* designing the class elements */
+        .city {
+        background-color: grey;
+        color: white;
+        border: 2px solid dark grey;
+        margin: 20px;
+        padding: 20px;
+        
+        }
+
+    </style>
+  </head>
+
+
+  <body>
+  <!-- laying the structure for the website -->
+      <h1 id = "MainHeading">My Journey To Canada</h1>
+      <div class="city">
+      <p1> I left New Delhi, India, where I had been residing for the last 2 weeks at 8 am on 25 August 2021, for the Maldives. I spent three days and two nights in the Male Island. Then, on the afternoon of August 27, 2021, I took my flight to Doha, where I spent only one night and one day before taking out for Canada the following morning. Finally I arrived at Toronto, Canada on August 28, 2021, at 3 p.m.  </p1>
+      </div>
+
+      <!-- defining the id -->
+      <h2 id="header">Things I Did </h2>
+
+      <!-- defining the class -->
+      <div class="city">
+        <h2> New Delhi, India</h2>
+        <br> 1. Sample Delhi’s delectable street food</br><br> 2. Admire the grandeur of Humayun's Tomb</br>
+        <br> 3. Listen to qawwalis</br>
+      </div> 
+      
+      <div class="city">
+        <h2>Male, Maldives</h2>
+        <br> 1. Scuba Diving</br><br> 2. Dolphin Watching</br>
+        <br> 3. Island Hopping</br>
+      </div>
+      
+      <div class="city">
+        <h2>Doha, Qatar</h2>
+        <br> 1. Souq Waqif Market</br><br> 2. Imam Muhammad Ibn Abd Al Wahhab Mosque</br>
+        <br> 3. Falcon Souq</br>
+      </div>
+
+      <div class="city">
+        <h2>Toronto, Canada</h2>
+        <br> 1. CN Tower</br><br> 2. Toronto Island Park</br>
+        <br> 3. Ripley's Aquarium of Canada</br>  
+      </div>
+
+
+
+    <div id="map"></div>
+    
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- *** STUDENTS: Replace YOUR_API_KEY text with provided key in class for property src in next line *** -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE&callback=initMap&v=weekly" async>
+    </script>
+  </body>
+</html>
